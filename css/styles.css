@@ -51,7 +51,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10086,12 +10086,13 @@ body {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  border-bottom: 4px solid #64a19d;
 }
 #mainNav .navbar-toggler {
-  font-size: 80%;
+  font-size: 100%;
   padding: 0.75rem;
   color: #64a19d;
-  border: 1px solid #64a19d;
+  border: none;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -10116,7 +10117,7 @@ body {
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+    transition: border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
@@ -10135,6 +10136,7 @@ body {
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
+    border-bottom: 3px solid #64a19d;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000000;
@@ -10159,9 +10161,10 @@ body {
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
+  padding: .85rem 1rem;
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -10173,14 +10176,14 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/indoorshopping1.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-mall-masthead-cropped-darkended.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 .masthead h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -10207,9 +10210,11 @@ body {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .masthead h2 {
-    max-width: 30rem;
+    max-width: 40rem;
     font-size: 1.25rem;
   }
 }
@@ -10310,13 +10315,51 @@ body {
   }
 }
 
+.proximity-logo {
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 5px;
+  height: 50%;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+
+  .proximity-logo {
+      height: 80%;
+      width: 80%;
+    }
+  }
+
+@media (min-width: 992px) {
+
+  .proximity-logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+
+  .line-break-container {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    height: 4px;
+    justify-content: center;
+  }
+
+  .line-break {
+    background-color: #64a19d;
+    height: 100%;
+    width: 8%;
+    border-radius: 1px;
+  }
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: #000;
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .projects-section {
@@ -10355,8 +10398,11 @@ body {
   background-size: cover;
 }
 .signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10364,7 +10410,7 @@ body {
 }
 .signup-section .form-inline input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1rem 2rem;
   height: auto;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
@@ -10378,7 +10424,7 @@ body {
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 1rem solid #64a19d;
 }
 .contact-section .card h4 {
   font-size: 0.8rem;
