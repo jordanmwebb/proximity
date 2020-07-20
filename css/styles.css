@@ -10237,8 +10237,8 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/cityscape1.jpg");
+  padding: 10rem 0;
+  background: url("../assets/img/bg_beta_info_screen.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10257,12 +10257,55 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
-@media (min-width: 768px) {
+
+.masthead-beta h3 {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .masthead-beta h2 {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  .masthead-beta h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .masthead-beta p {
+    font-size: 12px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .until-now {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
   .masthead-beta h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
+  .masthead-beta h2 {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+  .masthead-beta h3 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .masthead-beta p {
+    font-size: 12px;
+  }
+  .until-now {
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
 }
+
 @media (min-width: 992px) {
   .masthead-beta {
     height: 100vh;
@@ -10274,8 +10317,22 @@ body {
     letter-spacing: 0.8rem;
   }
   .masthead-beta h2 {
-    max-width: 30rem;
+    max-width: 40rem;
     font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  .masthead-beta h3 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+  .masthead-beta p {
+    font-size: 14px;
+  }
+  .until-now {
+    font-size: 2.4rem;
+    line-height: 4rem;
   }
 }
 
