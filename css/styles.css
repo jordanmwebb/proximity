@@ -10262,6 +10262,10 @@ body {
   font-size: 1.75rem;
 }
 
+.masthead-beta p {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
   .masthead-beta h2 {
     margin-bottom: 1.5rem;
@@ -10275,8 +10279,8 @@ body {
   }
   .masthead-beta p {
     font-size: 12px;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   .until-now {
     font-size: 2rem;
