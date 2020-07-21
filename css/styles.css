@@ -10267,6 +10267,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .masthead-beta {
+    padding-bottom: 5rem;
+  }
   .masthead-beta h2 {
     margin-bottom: 1.5rem;
     font-size: 16px;
