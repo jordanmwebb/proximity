@@ -10268,7 +10268,8 @@ body {
 
 @media (max-width: 768px) {
   .masthead-beta {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
+    padding-top: 8rem;
   }
   .masthead-beta h2 {
     margin-bottom: 1.5rem;
