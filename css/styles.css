@@ -10234,8 +10234,8 @@ body {
 
 .masthead-beta {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100vh;
   min-height: 35rem;
   padding: 10rem 0;
   background: url("../assets/img/bg_beta_info_screen.jpg");
@@ -10267,10 +10267,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .masthead-beta {
-    padding-bottom: 4rem;
-    padding-top: 8rem;
-  }
   .masthead-beta h2 {
     margin-bottom: 1.5rem;
     font-size: 16px;
@@ -10315,10 +10311,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  .masthead-beta {
-    height: 100vh;
-    padding: 0;
-  }
   .masthead-beta h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
@@ -10333,7 +10325,6 @@ body {
   .masthead-beta h3 {
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 5rem;
   }
   .masthead-beta p {
     font-size: 14px;
