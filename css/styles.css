@@ -10237,7 +10237,8 @@ body {
   width: auto;
   height: 100vh;
   min-height: 35rem;
-  padding: 10rem 0;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
   background: url("../assets/img/bg_beta_info_screen.jpg");
   background-position: center;
   background-repeat: no-repeat;
