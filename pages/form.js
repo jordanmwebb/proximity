@@ -1,12 +1,12 @@
 // Disable enter key on input
 
 (function($) {
-  const completed = `<h5 style="color: blue; text-align: center">Your email is already on file. Thank you for applying for the beta program. There are a limited number of slots for early access, and we will contact you if approved. </h5>
-  <a href="/" class="btn btn-primary">Home</a>`
-  const verified = `<h5 >Your account is verified. Thank you for applying for the Beta program! There are a limited number of slots for early access, and we will contact you if approved. </h5>
-  <a href="/" class="btn btn-primary">Home</a>`   
-  const notverified = `<h5">The verification code you entered does not match. Please try again!</h5>
-  <a href="/pages/index.html" class="btn btn-primary">Apply</a>`
+  const completed = `<h5 style="color: black; text-align: center; line-height: 1.75rem">Your email is already on file. Thank you for applying for the beta program. There are a limited number of slots for early access, and we will contact you if approved. </h5>
+  <div class="center-button mt-4"><a href="/" class="btn btn-primary">Home</a></div>`
+  const verified = `<h5 style="color: black; text-align: center; line-height: 1.75rem">Your account is verified. Thank you for applying for the Beta program! There are a limited number of slots for early access, and we will contact you if approved. </h5>
+  <div class="center-button mt-4"><a href="/" class="btn btn-primary">Home</a></div>`   
+  const notverified = `<h5 style="color: black; text-align: center; line-height: 1.75rem">The verification code you entered does not match. Please try again!</h5>
+  <div class="center-button mt-4"><a href="/pages/index.html" class="btn btn-primary">Home</a></div>`
   let em
 
 function stopEnterKey(evt) {

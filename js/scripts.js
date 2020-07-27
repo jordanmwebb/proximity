@@ -1,8 +1,8 @@
   
  (function ($) {
-    const duplicate = `<h3 class="text-white mb-5 text-center">The email account is already on file. </h3>`
-    const verified = `<h3 class="text-white mb-5">Your account is verified. Thank you for subscribing!</h3>`   
-    const notverified = `<h3 class="text-white mb-5">The verification does not match. Please try again!</h3>`
+    const duplicate = `<h3 class="text-white mb-5" style="text-align: center">The email account is already on file. </h3>`
+    const verified = `<h3 class="text-white mb-5 text-center">Your account is verified. Thank you for subscribing!</h3>`   
+    const notverified = `<h3 class="text-white mb-5 text-center">The verification does not match. Please try again!</h3>`
     let em
     const processEmail = (form, e) => {
         const email = document.getElementById('email').value

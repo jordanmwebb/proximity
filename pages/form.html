@@ -11,22 +11,46 @@
     <style>
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header img {
-  float: left;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
   background: #555;
-  margin-left: 10px;
-  margin-bottom: 20px;
 }
 
 .header p {
-  position: relative;
-  top: 18px;
-  left: 10px;
-  margin-bottom: 40px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-text {
+  text-align: center;
+  color: white;
 }
 
 input[type=text], select, textarea {
@@ -42,7 +66,13 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
+.center-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -54,12 +84,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
-}
+} */
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;  
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .col-25 {
@@ -74,6 +105,11 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -84,7 +120,7 @@ input[type=submit]:hover {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
-    width: 100%;
+    width: 95%;
     margin-top: 0;
   }
 }
@@ -92,10 +128,12 @@ input[type=submit]:hover {
 </head>
 
 <body>
-    <h2>Proximity Beta Early Access</h2>
     <div class="header">
-        <img src="../assets/img/icon-256x256.png" style="height: 50px; width:50px">
-        <p><b>Strategic Machines - Innovation at the Edge </b></p>
+      <a href="../index.html">
+        <img class="proximity-logo proximity-form" src="../assets/img/icon-72x72.png">
+      </a>
+        <h2 class="header-text mt-4">Proximity Beta Early Access</h2>
+        <p class="header-text"><b>Strategic Machines - Innovation at the Edge </b></p>
     </div> 
     
     <div class="container">
@@ -108,7 +146,7 @@ input[type=submit]:hover {
           </div>
         <div class="row">
           <div class="col-25">
-            <label for="name">Name</label>
+            <label for="name">NAME</label>
           </div>
           <div class="col-75">
             <input type="text" id="name" name="name" placeholder="Please enter your name...">
@@ -116,7 +154,7 @@ input[type=submit]:hover {
         </div>
         <div class="row">
             <div class="col-25">
-              <label for="email">Email</label>
+              <label for="email">EMAIL</label>
             </div>
             <div class="col-75">
               <input type="text" id="email" name="email" placeholder="Enter your email..." required>
@@ -124,7 +162,7 @@ input[type=submit]:hover {
           </div>        
         <div class="row">
           <div class="col-25">
-            <label for="coname">Company Name</label>
+            <label for="coname">COMPANY NAME</label>
           </div>
           <div class="col-75">
             <input type="text" id="coname" name="lastname" placeholder="Your company name..." required>
@@ -132,7 +170,7 @@ input[type=submit]:hover {
         </div>
         <div class="row">
             <div class="col-25">
-              <label for="website">Company Web Site</label>
+              <label for="website">COMPANY WEB SITE</label>
             </div>
             <div class="col-75">
               <input type="text" id="website" name="website" placeholder="Your company's web site url..." required>
@@ -140,7 +178,7 @@ input[type=submit]:hover {
           </div>
         <div class="row">
           <div class="col-25">
-            <label for="sector">Industry Sector</label>
+            <label for="sector">INDUSTRY SECTOR</label>
           </div>
           <div class="col-75">
             <select id="sector" name="sector">
@@ -153,14 +191,14 @@ input[type=submit]:hover {
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="comments">Comments</label>
+            <label for="comments">COMMENTS</label>
           </div>
           <div class="col-75">
             <textarea id="comments" name="comments" placeholder="Additional comments.." style="height:200px"></textarea>
           </div>
         </div>
-        <div class="row">
-          <input type="submit" value="Submit">
+        <div class="row center-button">
+          <input type="submit" value="Submit" class="btn btn-primary mt-3">
         </div>
       </form>
       <!-- verification code -->
@@ -171,18 +209,18 @@ input[type=submit]:hover {
               <input name="bot-field" />
             </label>
           </div>
-        <h4>Check your email (or junk mail) for the verification code and enter it here</h4>
-        <div class="row">
+        <h4 style="text-align: center;">Check your email (or junk mail) for the verification code and enter it here</h4>
+        <div class="row mt-4">
           <div class="col-25">
-            <label for="verify">Verify</label>
+            <label for="verify">VERIFY</label>
           </div>
           <div class="col-75">
             <input type="text" id="verify" name="verify" placeholder="Please enter your 5 digit verification code..">
           </div>
         </div>
         
-        <div class="row">
-          <input type="submit" value="Submit">
+        <div class="row center-button">
+          <input type="submit" value="Submit" class="btn btn-primary mt-3">
         </div>
       </form>
     </div>
