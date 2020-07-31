@@ -10529,3 +10529,58 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+/* Carousel Stylings */
+.carousel-item {
+  height: 100vh; 
+  width: 100vw
+}
+
+.choose-page {
+  background-image: url("../assets/img/Coffee_Shop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.process-title {
+  background-color: #64a19d; 
+  text-align: center;
+  padding: .5rem 2rem;
+}
+
+.process-title h1 {
+  color: white; 
+  font-size: 4rem; 
+}
+
+.process-title_top {
+  margin-bottom: -1rem;
+}
+
+@media (max-width: 650px) {
+  .process-title h1 {
+    font-size: 2rem;
+  }
+}
+
+.process-number {
+  color: white; 
+  font-size: 2.5rem; 
+  margin-bottom: 2rem; 
+  border-bottom: 5px solid #64a19d;
+}
+
+.detail-paragraph {
+  text-align: center; 
+  color: white; 
+  font-size: 1.5rem; 
+  margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+  .detail-paragraph {
+    font-size: 1rem;
+  }
+}
