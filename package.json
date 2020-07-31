@@ -24,7 +24,7 @@
     "bootstrap": "^4.5.0",
     "dotenv": "^8.2.0",
     "encoding": "^0.1.12",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.1",
     "mongodb": "^3.5.5",
     "netlify-lambda": "^1.6.3",
     "node-fetch": "^2.6.0",
