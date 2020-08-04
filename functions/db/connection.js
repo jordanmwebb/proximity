@@ -11,6 +11,11 @@ exports.createConnection = async () => {
   console.log('---debug connections-----')
   console.log(url)
   const client = new MongoClient(url, options)
-  await client.connect()
-  return client
+
+  try {
+    await client.connect()
+    return client
+  } catch(err) {
+    console.log(err)
+  }
 }
